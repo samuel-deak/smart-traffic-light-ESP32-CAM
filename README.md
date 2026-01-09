@@ -21,6 +21,8 @@ Este projeto implementa um sistema de controle de tráfego adaptativo utilizando
 
 O objetivo principal é otimizar o fluxo em cruzamentos urbanos, priorizando uma via principal e liberando a via secundária apenas mediante confirmação visual de presença de veículos.
 
+De maneira inicial, foi proposto um semáforo inteligente que se ajusta a partir do sinal de um sensor de obstáculos IR com Arduino, como mostra o [Escopo Inicial](./docs/Escopo%20inicial.pdf) do projeto. Entretanto, após análises, ele se tornou inviável, vista a impossibilidade de um sensor infravermelho funcionar corretamente em ambiente aberto, com luz solar, reflexos externos e a distância. Por isso, a utilização de Inteligência Articial com a placa ESP32-CAM foi a melhor alternativa.
+
 * **Processamento na Borda (Edge Computing):** Todo o processamento de imagem é feito no próprio ESP32-CAM, garantindo baixa latência e independência de conexão constante com a nuvem.
 * **Detecção Não Invasiva:** Elimina a necessidade de obras civis para sensores indutivos no asfalto.
 * **Inteligência Artificial:** Utiliza uma Rede Neural (treinada via Edge Impulse) capaz de identificar veículos.
@@ -31,13 +33,11 @@ O objetivo principal é otimizar o fluxo em cruzamentos urbanos, priorizando uma
 * **Plataforma de ML:** Edge Impulse (TinyML)
 * **Linguagem:** C++ (Arduino IDE)
 * **Componentes:**
-    * 1x Módulo ESP32-CAM-MB (para programação) 
+    * 1x Módulo FTDI ou ESP32-CAM-MB (para programação) 
     * 6x LEDs (2 Verdes, 2 Amarelos, 2 Vermelhos)
     * 6x Resistores 220R
     * Protoboard e Jumpers
 
->**Nota:** O módulo ESP32-CAM-MB pode ser substituído por um módulo  
-FTDI.
 ### 🔌 Pinagem (GPIO)
 
 A conexão dos LEDs segue a tabela abaixo (adaptada para o ESP32-CAM):
@@ -67,8 +67,8 @@ O firmware opera com base na inferência da IA em tempo real:
 
 ### 📂 Documentação
 
-* [📄 Relatório Técnico Completo (PDF)](./docs/RELATORIO_PROJETO.pdf)
-* [🖼️ Diagrama Elétrico](./assets/diagrama_circuito.png)
+* [📄 Relatório Técnico Completo (PDF)](./docs/Relatório%20do%20Projeto.pdf)
+* [🖼️ Diagrama Elétrico](./assets/Diagrama%20elétrico.png)
 
 ---
 
@@ -76,6 +76,8 @@ O firmware opera com base na inferência da IA em tempo real:
 ## 🇺🇸 English Version
 
 This project implements an adaptive traffic control system using an **ESP32-CAM**. Unlike fixed timers or physical barrier sensors, this system uses **Computer Vision** and **TinyML** to detect vehicles in real-time and dynamically adjust intersection flow.
+
+Initially, a smart traffic light was proposed that adjusts based on the signal from an IR obstacle sensor using Arduino, as shown in the project's [Initial Scope](./docs/Escopo%20inicial.pdf). However, after analysis, it became unfeasible, given the impossibility of an infrared sensor functioning correctly in an open environment with sunlight, external reflections, and at a distance. Therefore, the use of Artificial Intelligence with the ESP32-CAM board was the best alternative.
 
 ### 🧠 About the Project
 
@@ -91,12 +93,10 @@ The main objective is to optimize flow at urban intersections by prioritizing a 
 * **ML Platform:** Edge Impulse (TinyML)
 * **Language:** C++ (Arduino IDE)
 * **Components:**
-    * 1x FTDI Module (for programming)
+    * 1x FTDI Module or ESP32-CAM-MB (for programming)
     * 6x LEDs (2 Green, 2 Yellow, 2 Red)
     * 6x 220R Resistors
     * Breadboard and Jumpers
-
->**Note:** The ESP32-CAM-MB module can be replaced by an FTDI module.
 
 ### 🔌 Pinout (GPIO)
 
