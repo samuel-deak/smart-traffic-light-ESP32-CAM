@@ -15,7 +15,7 @@
 <a name="-versão-em-português"></a>
 ## 🇧🇷 Versão em Português
 
-Este projeto implementa um sistema de controle de tráfego adaptativo utilizando um **ESP32-CAM**. Diferente de temporizadores fixos ou sensores de barreira física, este sistema utiliza **Visão Computacional** e **TinyML** para detectar veículos em tempo real e ajustar o fluxo do cruzamento dinamicamente.
+Este é um projeto feito no curso Técnico em Eletroeletrônica da Escola SENAI de Bragança Paulista. Ele implementa um sistema de controle de tráfego adaptativo utilizando um **ESP32-CAM**. Diferente de temporizadores fixos ou sensores de barreira física, este sistema utiliza **Visão Computacional** e **TinyML** para detectar veículos em tempo real e ajustar o fluxo do cruzamento dinamicamente.
 
 ### 🧠 Sobre o Projeto
 
@@ -75,9 +75,9 @@ O firmware opera com base na inferência da IA em tempo real:
 <a name="-english-version"></a>
 ## 🇺🇸 English Version
 
-This project implements an adaptive traffic control system using an **ESP32-CAM**. Unlike fixed timers or physical barrier sensors, this system uses **Computer Vision** and **TinyML** to detect vehicles in real-time and dynamically adjust intersection flow.
+This is a project developed for the Electrical and Electronic Engineering Technician course at the SENAI School in Bragança Paulista. It implements an adaptive traffic control system using an **ESP32-CAM**. Unlike fixed timers or physical barrier sensors, this system uses **Computer Vision** and **TinyML** to detect vehicles in real-time and dynamically adjust intersection flow.
 
-Initially, a smart traffic light was proposed that adjusts based on the signal from an IR obstacle sensor using Arduino, as shown in the project's [Initial Scope](./docs/Escopo%20inicial.pdf). However, after analysis, it became unfeasible, given the impossibility of an infrared sensor functioning correctly in an open environment with sunlight, external reflections, and at a distance. Therefore, the use of Artificial Intelligence with the ESP32-CAM board was the best alternative.
+Initially, a smart traffic light was proposed that adjusts based on the signal from an IR obstacle sensor using Arduino, as shown in the project's [Initial Scope](./docs/Initial%20scope.pdf). However, after analysis, it became unfeasible, given the impossibility of an infrared sensor functioning correctly in an open environment with sunlight, external reflections, and at a distance. Therefore, the use of Artificial Intelligence with the ESP32-CAM board was the best alternative.
 
 ### 🧠 About the Project
 
@@ -127,12 +127,15 @@ The firmware operates based on real-time AI inference:
 
 ### 📂 Documentation
 
-* [📄 Full Technical Report (PDF - PT-BR)](./docs/RELATORIO_PROJETO.pdf)
-* [🖼️ Circuit Diagram](./assets/diagrama_circuito.png)
+* [📄 Full Technical Report (PDF - PT-BR)](./docs/Relatório%20do%20Projeto.pdf)
+* [🖼️ Circuit Diagram](./assets/Diagrama%20elétrico.png)
 
 ---
 
 ## 👥 Authors / Autores
 
-* Samuel Deak Luiz 
 * Arthur Feitosa Nogueira
+* Gustavo Alves
+* Jhonatan Ricardo
+* Pietro Augusto
+* Samuel Deak Luiz
