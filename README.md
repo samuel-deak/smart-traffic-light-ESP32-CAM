@@ -1,7 +1,7 @@
 <div align="center">
 
-# 🚦 Smart Traffic Light with ESP32-CAM & TinyML
-### Semáforo Inteligente com Visão Computacional
+# 🚦 Semáforo Inteligente com Visão Computacional
+### Smart Traffic Light with ESP32-CAM & TinyML
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 ![Status](https://img.shields.io/badge/Status-Completed-success)
