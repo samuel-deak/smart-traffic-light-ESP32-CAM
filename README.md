@@ -150,3 +150,7 @@ The firmware operates based on real-time AI inference:
 * Jhonatan Ricardo
 * Pietro Augusto
 * [Samuel Deak Luiz](github.com/samuel-deak)
+
+## 👨‍🏫 Orientador Docente / Faculty Advisor
+
+* Wesley Suzuki
