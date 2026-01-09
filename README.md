@@ -65,6 +65,12 @@ O firmware opera com base na inferência da IA em tempo real:
     * O Semáforo Secundário abre (Vermelho > Verde).
 5.  **Retorno:** Após o tempo de fluxo programado ou se a detecção cessar, o sistema retorna automaticamente ao Estado Padrão.
 
+---
+
+## <-> Código Fonte 
+[Clique aqui](./src/Código_Fonte.ino) para baixar o código fonte!
+O código fonte na linguagem C++ contém a IA que reconhece os veículos e toda a lógica de controle dos Leds de acordo com o diagrama. 
+
 ### 📂 Documentação
 
 * [📄 Relatório Técnico Completo (PDF)](./docs/Relatório%20do%20Projeto.pdf)
@@ -125,6 +131,11 @@ The firmware operates based on real-time AI inference:
     * Secondary Traffic Light opens (Red > Green).
 5.  **Return:** After the scheduled flow time or if detection ceases, the system automatically returns to the Default State.
 
+---
+
+## <-> Source Code
+[Click here](./src/Código_Fonte.ino) to download the source code! The source code in C++ contains the AI ​​that recognizes vehicles and all the logic for controlling the LEDs according to the diagram.
+
 ### 📂 Documentation
 
 * [📄 Full Technical Report (PDF - PT-BR)](./docs/Relatório%20do%20Projeto.pdf)
@@ -134,8 +145,8 @@ The firmware operates based on real-time AI inference:
 
 ## 👥 Authors / Autores
 
-* Arthur Feitosa Nogueira
+* [Arthur Feitosa Nogueira](https://github.com/arthurfeitosanogueira-coder)
 * Gustavo Alves
 * Jhonatan Ricardo
 * Pietro Augusto
-* Samuel Deak Luiz
+* [Samuel Deak Luiz](github.com/samuel-deak)
