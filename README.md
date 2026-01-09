@@ -73,8 +73,6 @@ O firmware opera com base na inferência da IA em tempo real:
 <a name="-english-version"></a>
 ## 🇺🇸 English Version
 
-> **Version 2.0:** Evolution from infrared sensors to Embedded Artificial Intelligence (Edge Computing).
-
 This project implements an adaptive traffic control system using an **ESP32-CAM**. Unlike fixed timers or physical barrier sensors, this system uses **Computer Vision** and **TinyML** to detect vehicles in real-time and dynamically adjust intersection flow.
 
 ### 🧠 About the Project
