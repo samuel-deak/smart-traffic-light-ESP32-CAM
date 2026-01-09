@@ -15,8 +15,6 @@
 <a name="-versão-em-português"></a>
 ## 🇧🇷 Versão em Português
 
-> **Versão 2.0:** Evolução do sistema de sensores infravermelhos para Inteligência Artificial Embarcada (Edge Computing).
-
 Este projeto implementa um sistema de controle de tráfego adaptativo utilizando um **ESP32-CAM**. Diferente de temporizadores fixos ou sensores de barreira física, este sistema utiliza **Visão Computacional** e **TinyML** para detectar veículos em tempo real e ajustar o fluxo do cruzamento dinamicamente.
 
 ### 🧠 Sobre o Projeto
@@ -25,7 +23,7 @@ O objetivo principal é otimizar o fluxo em cruzamentos urbanos, priorizando uma
 
 * **Processamento na Borda (Edge Computing):** Todo o processamento de imagem é feito no próprio ESP32-CAM, garantindo baixa latência e independência de conexão constante com a nuvem.
 * **Detecção Não Invasiva:** Elimina a necessidade de obras civis para sensores indutivos no asfalto.
-* **Inteligência Artificial:** Utiliza uma Rede Neural Convolucional (treinada via Edge Impulse) capaz de diferenciar veículos de outros objetos.
+* **Inteligência Artificial:** Utiliza uma Rede Neural (treinada via Edge Impulse) capaz de identificar veículos.
 
 ### 🛠️ Hardware e Tecnologias
 
@@ -134,8 +132,5 @@ The firmware operates based on real-time AI inference:
 
 ## 👥 Authors / Autores
 
-* **Samuel Deak Luiz**
-* Arthur
-* Gustavo
-* Jhonatan
-* Pietro
+* Samuel Deak Luiz 
+* Arthur Feitosa Nogueira
