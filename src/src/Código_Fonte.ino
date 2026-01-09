@@ -26,7 +26,7 @@
 
 
 /* Includes ---------------------------------------------------------------- */
-#include <Sem_foro_Inteligente_inferencing.h> // Substitua pelo nome da sua biblioteca
+#include <Sem_foro_Inteligente_inferencing.h> // Include do modelo gerado pelo Edge Impulse
 #include "edge-impulse-sdk/dsp/image/image.hpp"
 
 
