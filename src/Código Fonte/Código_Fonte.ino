@@ -302,10 +302,9 @@ void loop()
 
 #if EI_CLASSIFIER_OBJECT_DETECTION == 1
     
-    float max_carro_confianca = 0.0; // Reseta a confian�a a cada ciclo
+    float max_carro_confianca = 0.0; // Reseta a confiança a cada ciclo
 
-
-    // IMPRESS�O ORIGINAL (Solicitada por voc�)
+    // Imprime as bounding boxes detectadas
     ei_printf("Object detection bounding boxes:\r\n");
     for (uint32_t i = 0; i < result.bounding_boxes_count; i++) {
         ei_impulse_result_bounding_box_t bb = result.bounding_boxes[i];
@@ -314,7 +313,7 @@ void loop()
         }
 
 
-        // Imprime a detec��o (como no original)
+        // Imprime as informações da bounding box
         ei_printf("   %s (%f) [ x: %u, y: %u, width: %u, height: %u ]\r\n",
                 bb.label, bb.value, bb.x, bb.y, bb.width, bb.height);
 
@@ -554,7 +553,7 @@ static int ei_camera_get_data(size_t offset, size_t length, float *out_ptr)
 
 
 // ==========================================================
-// NOVAS FUN��ES DO SEM�FORO
+// FUNÇÕES DA MÁQUINA DE ESTADOS DO SEMÁFORO
 // ==========================================================
 
 

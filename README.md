@@ -31,11 +31,13 @@ O objetivo principal é otimizar o fluxo em cruzamentos urbanos, priorizando uma
 * **Plataforma de ML:** Edge Impulse (TinyML)
 * **Linguagem:** C++ (Arduino IDE)
 * **Componentes:**
-    * 1x Módulo FTDI (para programação)
+    * 1x Módulo ESP32-CAM-MB (para programação) 
     * 6x LEDs (2 Verdes, 2 Amarelos, 2 Vermelhos)
     * 6x Resistores 220R
     * Protoboard e Jumpers
 
+>**Nota:** O módulo ESP32-CAM-MB pode ser substituído por um módulo  
+FTDI.
 ### 🔌 Pinagem (GPIO)
 
 A conexão dos LEDs segue a tabela abaixo (adaptada para o ESP32-CAM):
@@ -49,7 +51,7 @@ A conexão dos LEDs segue a tabela abaixo (adaptada para o ESP32-CAM):
 | **Secundário (Via 2)** | 🟡 Amarelo | GPIO 4 |
 | **Secundário (Via 2)** | 🔴 Vermelho | GPIO 15 |
 
-> **Nota:** Os pinos GPIO 0 e GPIO 16 são utilizados internamente pela câmera ou para boot.
+> **Nota:** Os pinos GPIO 0 e GPIO 16 são utilizados internamente pela câmera ou para boot. Além disso, o pino GPIO 4 é o mesmo que o flash do ESP32-CAM, sendo necessário usá-lo por falta de saídas da placa.
 
 ### ⚙️ Lógica de Controle
 
@@ -94,6 +96,8 @@ The main objective is to optimize flow at urban intersections by prioritizing a 
     * 6x 220R Resistors
     * Breadboard and Jumpers
 
+>**Note:** The ESP32-CAM-MB module can be replaced by an FTDI module.
+
 ### 🔌 Pinout (GPIO)
 
 LED connections follow the table below (adapted for ESP32-CAM):
@@ -107,7 +111,7 @@ LED connections follow the table below (adapted for ESP32-CAM):
 | **Secondary (Road 2)** | 🟡 Yellow | GPIO 4 |
 | **Secondary (Road 2)** | 🔴 Red | GPIO 15 |
 
-> **Note:** GPIO 0 and GPIO 16 are used internally by the camera or for boot/flash modes.
+> **Note:** GPIO 0 and GPIO 16 are used internally by the camera or for boot/flash modes. Furthermore, GPIO pin 4 is the same as the flash pin on the ESP32-CAM, and it needs to be used due to a lack of outputs on the board.
 
 ### ⚙️ Control Logic
 
