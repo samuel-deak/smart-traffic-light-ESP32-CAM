@@ -143,7 +143,7 @@ The firmware operates based on real-time AI inference:
 
 ---
 
-## 👥 Authors / Autores
+## 👥 Autores / Authors
 
 * [Arthur Feitosa Nogueira](https://github.com/arthurfeitosanogueira-coder)
 * Gustavo Alves
